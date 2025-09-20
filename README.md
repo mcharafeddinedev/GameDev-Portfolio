@@ -1,5 +1,4 @@
 # Game Dev Portfolio
-Marwan Charafeddine
 
 Welcome! This repository is a **curated showcase of my game development work** — built to give 
 recruiters, hiring managers, and collaborators a clear look at my coding style, problem-solving, 
