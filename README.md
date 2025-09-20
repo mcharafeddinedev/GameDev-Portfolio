@@ -1,9 +1,9 @@
 # Game Dev Portfolio
 
-![Unity](https://img.shields.io/badge/Engine-Unity-informational)
-![Unreal](https://img.shields.io/badge/Engine-Unreal-informational)
-![C%23](https://img.shields.io/badge/Language-C%23-informational)
-![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational)
+[![Unity](https://img.shields.io/badge/Engine-Unity-informational?logo=unity)](https://unity.com/)
+[![Unreal](https://img.shields.io/badge/Engine-Unreal-informational?logo=unreal-engine)](https://www.unrealengine.com/)
+[![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 
 Welcome! This repository is a **curated showcase of my game development work** — built to give 
 recruiters, hiring managers, and collaborators a clear look at my coding style, problem-solving, 
@@ -196,4 +196,15 @@ Links to project highlights and demos:
 - B.S. in Veterinary Studies (USVM- Concentration in Biomedical Science) from Texas A&M University at College Station
 - Founder of **Gold Leaf Interactive**
 - Currently focused on growing in gameplay programming, systems design, and UX
+
+---
+
+## 📬 Contact  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](www.linkedin.com/in/marwan-charafeddine-213065155) 
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-red?logo=gmail)](mailto:mcharafeddinedev@gmail.com) 
+[![Itch.io](https://img.shields.io/badge/Itch.io-Portfolio-critical?logo=itch.io)](https://goldleafinteractive.itch.io/) 
+[![Steam](https://img.shields.io/badge/Steam-Projects-lightgrey?logo=steam)](https://store.steampowered.com/app/3023100/Ginger_Shroom_Journey/) 
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)](https://github.com/mcharafeddinedev)
+
 
