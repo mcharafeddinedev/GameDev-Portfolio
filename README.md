@@ -1,5 +1,10 @@
 # Game Dev Portfolio
 
+![Unity](https://img.shields.io/badge/Engine-Unity-informational)
+![Unreal](https://img.shields.io/badge/Engine-Unreal-informational)
+![C%23](https://img.shields.io/badge/Language-C%23-informational)
+![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational)
+
 Welcome! This repository is a **curated showcase of my game development work** — built to give 
 recruiters, hiring managers, and collaborators a clear look at my coding style, problem-solving, 
 and technical depth.
