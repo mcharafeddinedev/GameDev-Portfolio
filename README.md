@@ -187,7 +187,8 @@ Links to project highlights and demos:
 ---
 
 ## 👋 About Me
-- A.A.S. in Digital Gaming & Simulation for Programmers (Houston Community College)  
+- A.A.S. in Digital Gaming & Simulation for Programmers from Houston City College (formerly named Houston Community College)
+- B.S. in Veterinary Studies (USVM- Concentration in Biomedical Science) from Texas A&M University at College Station
 - Founder of **Gold Leaf Interactive**
-- Focused on growing in gameplay programming, systems design, and UX
+- Currently focused on growing in gameplay programming, systems design, and UX
 
