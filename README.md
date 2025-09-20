@@ -16,12 +16,15 @@ and technical depth.
 
 - **[Ginger Shroom Journey: C# Deep Dive](Docs/GSJ_CSharp_Analysis.pdf)**  
   An in-depth analysis of my own published project, focusing on gameplay scripting and 
-  architecture.  
+  architecture.
+
+- **[Videos](Docs/VideoLinks.pdf)**  
+   Recordings of work processes and project development.
 
 ## 💻 Code Excerpts
-Below are a few representative code samples from **Ginger Shroom Journey**.  
+Below are a few representative code samples from one of my projects, **Ginger Shroom Journey**.  
 Each example highlights a different gameplay system and includes an explanation.  
-(For deeper dives, see the [Docs](Docs) folder.)
+(For deeper dives and much more, see the [Docs](Docs) folder.)
 
 ---
 
@@ -194,7 +197,7 @@ Links to project highlights and demos:
 ## 👋 About Me
 - A.A.S. in Digital Gaming & Simulation for Programmers from Houston City College (formerly named Houston Community College)
 - B.S. in Veterinary Studies (USVM- Concentration in Biomedical Science) from Texas A&M University at College Station
-- Founder of **Gold Leaf Interactive**
+- Founder of **Gold Leaf Interactive** 
 - Currently focused on growing in gameplay programming, systems design, and UX
 
 ---
