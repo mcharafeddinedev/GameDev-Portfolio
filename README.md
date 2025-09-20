@@ -180,6 +180,12 @@ Links to project highlights and demos:
 
 ---
 
+[![Alt text](Docs/assets/revisedLogoForGitHubPages.png)](https://goldleafinteractive.itch.io)
+
+---
+  
+---
+
 ## 👋 About Me
 - A.A.S. in Digital Gaming & Simulation for Programmers (Houston Community College)  
 - Founder of **Gold Leaf Interactive**
