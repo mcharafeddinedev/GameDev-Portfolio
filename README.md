@@ -5,11 +5,11 @@ recruiters, hiring managers, and collaborators a clear look at my coding style, 
 and technical depth.
 
 ## 📄 Featured Documents
-- **[Technologies & Techniques PDF](Docs/Technologies_Techniques.pdf)**  
+- **[Technologies & Techniques PDF](Docs/MC_ProjectExperiences.pdf)**  
   A detailed breakdown of the programming languages, engines, tools, and workflows I’ve applied 
   across past projects.  
 
-- **[Ginger Shroom Journey: C# Deep Dive](Docs/GingerShroomJourney_DeepDive.pdf)**  
+- **[Ginger Shroom Journey: C# Deep Dive](Docs/GSJ_CSharp_Analysis.pdf)**  
   An in-depth analysis of my own published project, focusing on gameplay scripting and 
   architecture.  
 
