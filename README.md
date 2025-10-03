@@ -311,7 +311,8 @@ Collectible coins that add to score, play sound effects, and have a small delay 
 
 ---
 
-[![Alt text](Docs/assets/revisedLogoForGitHubPages.png)](https://goldleafinteractive.itch.io)
+[<img width="2750" height="900" alt="revisedLogoForGitHubPages" src="https://github.com/user-attachments/assets/652c4d2a-2444-48e4-a495-ed87bf902805" />
+](https://goldleafinteractive.itch.io)
 
 ---
   
