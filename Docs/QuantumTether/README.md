@@ -1,6 +1,8 @@
 # Quantum Tether Documentation
 
-This folder contains documentation and source code from **Quantum Tether**, my game jam project from TX Game Jam 2024.
+This folder contains documentation and source code from **Quantum Tether**, my game jam project from TX Game Jam 2025 (EGaDS at UT Austin)
+
+Check out the game's public repository! --> [https://github.com/mcharafeddinedev/QuantumTether]
 
 ## Project Overview
 
