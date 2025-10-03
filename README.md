@@ -40,7 +40,7 @@ I got into game development a few years after finishing my veterinary studies. T
 
 ## Featured Projects
 
-### Quantum Tether (TX Game Jam 2024)
+### Quantum Tether (TX Game Jam 2025)
 An infinite 2D side-scrolling grappling hook game I built in Unity 6 for TX Game Jam. Players swing between grapple points using rope physics while the camera scrolls faster over time to make it harder. Has procedural generation, upgrade system, and audio integration.
 
 **What I Built:**
@@ -52,18 +52,18 @@ An infinite 2D side-scrolling grappling hook game I built in Unity 6 for TX Game
 - Modular design where each script does one thing
 
 **Development:**
-- Built in 52 hours for TX Game Jam 2024 (theme: "Out of Time")
-- Spent a few days after the jam adding a few features, cleaning up and documenting everything
-- Made tutorial guides for all the systems
+- Built in ~52 hours for TX Game Jam 2024 (theme: "Out of Time")
+- Spent several days after the jam adding more features, cleaning up and documenting everything
+- Made tutorial guides for all the game & mechanics systems
 
 ### Ginger Shroom Journey (Published on Steam)
-A 2D platformer with movement mechanics, enemy AI, and level elements. The game shows my work on game systems and code architecture.
+A 2D platformer with movement mechanics, enemy AI, and level elements. The game shows my work on game systems, code architecture, and more.
 
 **What I Built:**
 - 2D physics-based movement system
 - Enemy AI that patrols and detects obstacles
 - Game state management system
-- Steam SDK integration for achievements and cloud saves
+- Started learning about Steam SDK integration for achievements and cloud saves
 - Performance optimization to maintain 60fps
 
 ### Additional Projects
