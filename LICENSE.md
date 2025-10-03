@@ -1,4 +1,5 @@
 Copyright (c) 2025 Marwan Charafeddine. All Rights Reserved.
+Copyright (c) 2025 Gold Leaf Interactive. All Rights Reserved.
 
 This repository contains code samples and documentation from my game development portfolio. 
 The code examples are provided for demonstration purposes to showcase my technical skills 
