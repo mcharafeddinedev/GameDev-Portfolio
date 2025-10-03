@@ -14,8 +14,8 @@ I got into game development a few years after finishing my veterinary studies. T
 **Programming Languages:** C#, C++, Blueprint Visual Scripting  
 **Game Engines:** Unity 6, Unity 2022+, Unreal Engine 5  
 **What I Work On:** Gameplay Programming, Systems Design, Physics Programming, Procedural Generation, Event Systems  
-**Advanced Stuff:** Rope Physics, Object Management, Memory Management, Performance Optimization, Modular Code  
-**Tools:** Visual Studio, Rider, Git, Perforce, Unity Input System, Unreal Blueprint Editor  
+**Advanced Stuff:** Physics, Object Management, Memory Management, Performance Optimization, Modular Code  
+**Tools:** Visual Studio, C#, Git, Trello, Jira, Unity 6, Unreal Engine 5, UE Blueprints Editor
 **Platforms:** PC (Windows), Steam, Itch.io, Game Jams  
 
 ## Documentation
