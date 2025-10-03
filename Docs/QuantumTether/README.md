@@ -4,13 +4,12 @@ This folder contains documentation and source code from **Quantum Tether**, my g
 
 ## Project Overview
 
-**Quantum Tether** is an infinite 2D side-scrolling grappling hook game I built in Unity 6. Players swing between grapple points using rope physics while the camera scrolls faster over time to make it harder. The game has procedural generation, upgrade system, and audio integration.
+**Quantum Tether** is an infinite 2D side-scrolling grappling hook game I built in Unity 6 and scripted with C#. Players swing between anchor points using rope physics while the camera scrolling speed increases over time to introduce more difficulty. The game has procedural generation for the infinite scrolling environment and game objects, a rogue-like upgrade system, and audio integration.
 
-**Game Jam**: TX Game Jam 2024  
+**Game Jam**: TX Game Jam 2025 (EGaDS)
 **Theme**: "Out of Time"  
-**Development Time**: 52 hours + post-jam refinement  
+**Development Time**: 52 hours + post-jam refinement for several days following the jam
 **Platform**: Unity 6 (Windows)  
-**Lines of Code**: 7,600+  
 
 ## What's Here
 
@@ -75,12 +74,12 @@ Complete setup guides for each system:
 ## Key Technical Features
 
 ### Event System
-Systems talk to each other through events instead of direct references, which makes the code modular and easier to maintain.
+Systems talk to each other through events instead of direct references, which makes the code more modular and easier to maintain than otherwise.
 
 ### Physics
-- Rope physics using DistanceJoint2D and LineRenderer
-- Swinging mechanics with auto-contraction
-- Collision detection and bounce effects
+- Simulated 'Rope' physics using DistanceJoint2D and LineRenderer
+- Swinging mechanics with auto-contraction for a natural feeling
+- Collision detection and bounce effects for feedback
 
 ### Procedural Generation
 - 9+ different anchor patterns (clusters, lines, stairs, pyramids, etc.)
@@ -108,4 +107,4 @@ This project taught me several game development concepts:
 - **Modular architecture** for maintainable code
 - **Documentation** and tutorial systems
 
-The codebase works as both a game and a reference for future projects, showing good game development practices.
+This codebase works as both a game and a reference for my future projects, showing good organization and development practices.
