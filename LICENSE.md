@@ -9,4 +9,4 @@ and programming abilities to potential employers.
 - Portfolio documentation may be shared for professional review
 - No commercial use or redistribution without explicit written permission
 
-**Contact:** For licensing inquiries or permission requests, please contact mcharafeddinedev@gmail.com
+**Contact:** For permission requests, licensing, or business inquiries, please contact mcharafeddinedev@gmail.com
