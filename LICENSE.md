@@ -1,5 +1,12 @@
-Copyright (c) 2025 Marwan Charafeddine. 
-All Rights Reserved. 
-This repository is provided solely as a portfolio showcase. 
-No part of the code, documents, or media may be copied, modified, or used in derivative works 
-without explicit permission.
+Copyright (c) 2025 Marwan Charafeddine. All Rights Reserved.
+
+This repository contains code samples and documentation from my game development portfolio. 
+The code examples are provided for demonstration purposes to showcase my technical skills 
+and programming abilities to potential employers.
+
+**Usage Rights:**
+- Code samples may be referenced for educational purposes
+- Portfolio documentation may be shared for professional review
+- No commercial use or redistribution without explicit written permission
+
+**Contact:** For licensing inquiries or permission requests, please contact mcharafeddinedev@gmail.com
