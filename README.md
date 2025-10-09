@@ -1,13 +1,11 @@
-# Marwan Charafeddine - Game Developer Portfolio
+# Marwan Charafeddine - Portfolio
 
 [![Unity](https://img.shields.io/badge/Engine-Unity-informational?logo=unity)](https://unity.com/)
 [![Unreal](https://img.shields.io/badge/Engine-Unreal-informational?logo=unreal-engine)](https://www.unrealengine.com/)
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 
-This is my game development portfolio. I work with Unity and Unreal Engine, focusing mainly on gameplay programming and building game systems. The code samples and documentation here are from projects I've worked on, including my published game.
-
-I got into game development a few years after finishing my veterinary studies. The problem-solving approach from my science background has been really helpful for debugging and building complex game systems, understanding new ideas and techniques, and approaching challenges systematically.
+I’m a game developer specializing in gameplay programming and systems design, working with Unity and Unreal Engine. After completing my veterinary studies at Texas A&M, I discovered my passion for interactive design and returned to school to pursue game development. My science background taught me to think systematically, troubleshoot effectively, and approach complex problems with curiosity. This portfolio showcases my skills, projects, and dedication to building engaging and functional game experiences.
 
 ## Technical Skills
 
