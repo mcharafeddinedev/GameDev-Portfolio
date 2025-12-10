@@ -5,15 +5,15 @@
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 
-I’m a game developer specializing in gameplay programming and systems design, working with Unity and Unreal Engine. After completing my veterinary studies at Texas A&M, I discovered my passion for interactive design and returned to school to pursue game development. My science background taught me to think systematically, troubleshoot effectively, and approach complex problems with curiosity. This portfolio showcases my skills, projects, and dedication to building engaging and functional game experiences.
+I’m a game development student specializing in gameplay programming and in-game systems design, working with Unreal Engine 5 and Unity. After completing my veterinary studies at Texas A&M, I discovered my passion for interactive design and returned to school to pursue game development. My science background taught me to think systematically, troubleshoot effectively, and approach complex problems with curiosity. This portfolio showcases my skills, projects, and dedication to building engaging and functional game experiences.
 
 ## Technical Skills
 
 **Programming Languages:** C#, C++, Blueprint Visual Scripting  
-**Game Engines:** Unity 6, Unity 2022+, Unreal Engine 5  
-**What I Work On:** Gameplay Programming, Systems Design, Physics Programming, Procedural Generation, Event Systems  
-**Advanced Stuff:** Physics, Object Management, Memory Management, Performance Optimization, Modular Code  
-**Tools:** Visual Studio, C#, Git, Trello, Jira, Unity 6, Unreal Engine 5, UE Blueprints Editor
+**Game Engines:** Unity, Unreal Engine 5
+**What I Work On:** Gameplay Programming, Feature/Mechanic(s) Design, Prototyping, Procedural Generation, Physics Systems, Event Systems
+**More Advanced Stuff I'm Learning:** Object Management, Memory Management, Performance Optimization, Behavior Trees, Modular Code 
+**Tools/Softwares:** Visual Studio, Git, Trello, Jira, Unity 6, Unreal Engine 5, UE Blueprints Editor
 **Platforms:** PC (Windows), Steam, Itch.io, Game Jams  
 
 ## Documentation
