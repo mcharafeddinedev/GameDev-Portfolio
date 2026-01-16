@@ -27,7 +27,7 @@ StateRunner is built around a **state-driven world system**, not a traditional g
 
 Unlike menu or lifecycle states, these modes are **active gameplay mechanics** that modify collision rules, speed, scoring, and player agency while the run is in progress. This gives players strategic control over the environment rather than simply responding to it.
 
-*(Note: The current prototype focuses on core movement, scrolling, and scoring systems. PHASE and OVERCLOCK are part of the full design and will be layered in once the foundation is solid.)* :contentReference[oaicite:0]{index=0}
+*(Note: The current prototype focuses on core movement, scrolling, and scoring systems. PHASE and OVERCLOCK are part of the full design and will be layered in once the foundation is solid.)*
 
 ---
 
@@ -45,7 +45,7 @@ Designed for **“one more run” replayability** and future arcade cabinet depl
 
 ## ⚙️ Technical Focus
 
-StateRunner is being developed as a **systems-driven C++ project** with performance, modularity, and scalability in mind.
+StateRunner is being developed as a **systems-driven C++ project** at its core with performance, modularity, and scalability in mind.
 
 ### Core Systems
 
@@ -116,8 +116,6 @@ Systems communicate via **delegates/events**, minimizing tight coupling and redu
 - PHASE state (selective obstacle pass-through)  
 - OVERCLOCK state (speed boost with scoring multipliers)  
 - Advanced visuals, audio, and local leaderboard  
-
-Development follows a strict **“gameplay first, polish later”** philosophy to ensure the core loop is engaging, performant, and extensible before layering on advanced mechanics. :contentReference[oaicite:1]{index=1}
 
 ---
 
