@@ -1,319 +1,105 @@
-# Marwan Charafeddine - Portfolio
+# Marwan Charafeddine — Game Development Portfolio
 
 [![Unity](https://img.shields.io/badge/Engine-Unity-informational?logo=unity)](https://unity.com/)
 [![Unreal](https://img.shields.io/badge/Engine-Unreal-informational?logo=unreal-engine)](https://www.unrealengine.com/)
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 
-I’m a game development student specializing in gameplay programming and in-game systems design, working with Unreal Engine 5 and Unity. After completing my veterinary studies at Texas A&M, I discovered my passion for interactive design and returned to school to pursue game development. My science background taught me to think systematically, troubleshoot effectively, and approach complex problems with curiosity. This portfolio showcases my skills, projects, and dedication to building engaging and functional game experiences.
+I’m a gameplay-focused developer working primarily with **Unreal Engine 5** and **Unity**, specializing in mechanics, systems design, and technical implementation.  
+After completing my studies at Texas A&M, I went back to school to pursue game development—bringing a structured, analytical mindset into learning programming and interactive systems.
+
+This repository serves as my **technical portfolio**: design documentation, system breakdowns, and code samples that complement my main website.
+
+🌐 **Portfolio Website:** https://mcharafeddinedev.github.io
+
+---
 
 ## Technical Skills
 
-**Programming Languages:** C#, C++, Blueprint Visual Scripting  
-**Game Engines:** Unity, Unreal Engine 5
-**What I Work On:** Gameplay Programming, Feature/Mechanic(s) Design, Prototyping, Procedural Generation, Physics Systems, Event Systems
-**More Advanced Stuff I'm Learning:** Object Management, Memory Management, Performance Optimization, Behavior Trees, Modular Code 
-**Tools/Softwares:** Visual Studio, Git, Trello, Jira, Unity 6, Unreal Engine 5, UE Blueprints Editor
-**Platforms:** PC (Windows), Steam, Itch.io, Game Jams  
+**Languages**
+- C#, C++, Blueprint Visual Scripting  
+
+**Engines**
+- Unity, Unreal Engine 5  
+
+**Focus Areas**
+- Gameplay programming & systems design  
+- Mechanics and state-driven architecture  
+- Prototyping and rapid iteration  
+- Procedural generation & physics-based systems  
+
+**Advanced Topics (In Progress)**
+- Object & memory management  
+- Performance optimization  
+- AI logic & behavior trees  
+- Modular and engine-level architecture  
+
+**Tools**
+- Visual Studio, Git, Trello, Jira  
+- Unity 6, Unreal Engine 5, UE Blueprints Editor  
+
+**Platforms**
+- Windows PC, Steam, Itch.io, Game Jams  
+
+---
+
+## Current Development Focus
+
+### 🎮 Gameplay Prototyping
+I’m actively developing an **endless-runner style arcade game**, centered on responsive movement, scoring systems, and replayable game loops. This project is used to refine moment-to-moment feel, modular gameplay logic, and clean system design.
+
+### ⚙️ Engine-Level Exploration (C++)
+Alongside engine-based work, I’ve been experimenting with a **custom 2D engine in C++**. While not yet production-ready, this project has deepened my understanding of rendering concepts, entity management, and low-level architecture. I plan to return to it in a more structured way as my C++ skills continue to grow.
+
+### 🧩 Tooling, Automation & Modern Workflows
+I also explore **editor tooling and development automation**, including Python-based workflows for Unreal Engine editor tasks, data handling, and internal utilities. More broadly, I focus on integrating modern workflows and emerging technologies to improve iteration speed, clarity, and long-term maintainability.
+
+---
 
 ## Documentation
 
-- **[Documentation Overview](Docs/README.md)**  
-  Guide to all the materials and code samples in this portfolio.
+This repository functions as a technical archive alongside my website:
 
-- **[Quantum Tether: Complete Documentation](Docs/QuantumTether/)**  
-  Documentation, source code, and analysis of my game jam project.
-
-- **[Project Experiences & Technical Overview](Docs/MC_ProjectExperiences.pdf)**  
-  Notes on the tech stack and tools I've used across different projects.
-
-- **[Ginger Shroom Journey: Code Architecture Analysis](Docs/GSJ_CSharp_Analysis.pdf)**  
-  Deep dive into the code architecture and systems I built for my published game.
-
-- **[Development Process Videos](Docs/VideoLinks.pdf)**  
-  Some development process recordings and demos.
-
-- **[Complete Source Code](Docs/GSJ_Scripts/)**  
-  All the C# source code from Ginger Shroom Journey, organized by system.
-
-## Featured Projects
-
-### Quantum Tether (TX Game Jam 2025)
-An infinite 2D side-scrolling grappling hook game I built in Unity 6 for TX Game Jam. Players swing between grapple points using rope physics while the camera scrolls faster over time to make it harder. Has procedural generation, upgrade system, and audio integration.
-
-**What I Built:**
-- Event system so different parts of the game can talk to each other without being directly connected
-- Grappling hook physics using DistanceJoint2D and LineRenderer
-- Procedural generation with 10+ different anchor patterns
-- Upgrade system where you pick improvements after dying
-- Object cleanup system to prevent memory issues
-- Modular design where each script does one thing
-
-**Development:**
-- Built in ~52 hours for TX Game Jam 2024 (theme: "Out of Time")
-- Spent several days after the jam adding more features, cleaning up and documenting everything
-- Made tutorial guides for all the game & mechanics systems
-
-### Ginger Shroom Journey (Published on Steam)
-A 2D platformer with movement mechanics, enemy AI, and level elements. The game shows my work on game systems, code architecture, and more.
-
-**What I Built:**
-- 2D physics-based movement system
-- Enemy AI that patrols and detects obstacles
-- Game state management system
-- Started learning about Steam SDK integration for achievements and cloud saves
-- Performance optimization to maintain 60fps
-
-### Additional Projects
-Smaller projects showing different game development techniques, including 3D level design analysis and some experimental work.
-
-## Code Samples
-Here are some code snippets from my projects. These show how I approached different game systems. The code includes error handling, documentation, and performance considerations.
-
-*Note: These are simplified versions for readability. The actual implementation includes 
-additional error handling and edge cases.*
-
-### Quantum Tether - Grappling Hook Physics
-```csharp
-public class EnhancedPlayerSwing : MonoBehaviour
-{
-    [SerializeField] private float maxRopeLength = 8f;
-    [SerializeField] private LayerMask grappleLayer = 1;
-    [SerializeField] private bool autoContractOnConnect = true;
-    [SerializeField] private float autoContractAmount = 0.2f;
-    
-    private DistanceJoint2D primaryJoint;
-    private LineRenderer rope;
-    private bool isGrappling = false;
-    
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            TryGrapple(mousePos);
-        }
-        
-        if (Input.GetKey(KeyCode.Space) && isGrappling)
-        {
-            ContractRope();
-        }
-    }
-    
-    void TryGrapple(Vector2 targetPos)
-    {
-        Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
-        float distance = Vector2.Distance(transform.position, targetPos);
-        
-        if (distance > maxRopeLength) return;
-        
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, grappleLayer);
-        if (hit.collider != null)
-        {
-            CreateGrappleJoint(hit.point);
-        }
-    }
-    
-    void CreateGrappleJoint(Vector2 anchorPoint)
-    {
-        primaryJoint = gameObject.AddComponent<DistanceJoint2D>();
-        primaryJoint.connectedAnchor = anchorPoint;
-        primaryJoint.distance = Vector2.Distance(transform.position, anchorPoint);
-        
-        isGrappling = true;
-        
-        if (autoContractOnConnect)
-        {
-            primaryJoint.distance *= (1f - autoContractAmount);
-        }
-    }
-}
-```
-
-The core grappling hook mechanics - raycast to mouse position, create physics joint, auto-contract for that satisfying "yoink" effect.
-
-### Quantum Tether - Dash Movement
-```csharp
-public class EnhancedPlayerDash : MonoBehaviour
-{
-    [SerializeField] private float dashForce = 15f;
-    [SerializeField] private float dashCooldown = 2f;
-    [SerializeField] private float dashDuration = 0.2f;
-    
-    private Rigidbody2D rb;
-    private bool canDash = true;
-    private bool isDashing = false;
-    
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            StartDash();
-        }
-    }
-    
-    void StartDash()
-    {
-        isDashing = true;
-        canDash = false;
-        
-        Vector2 dashDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-        rb.velocity = dashDirection * dashForce;
-        
-        StartCoroutine(DashCooldown());
-    }
-    
-    IEnumerator DashCooldown()
-    {
-        yield return new WaitForSeconds(dashDuration);
-        isDashing = false;
-        
-        yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
-    }
-}
-```
-
-Quick burst movement toward the mouse cursor with cooldown system. Adds a lot of mobility to the grappling gameplay.
-
-### Quantum Tether - Procedural Generation Patterns
-```csharp
-public class EnhancedSpawner : MonoBehaviour
-{
-    void SpawnFibonacciSpiralAt(Vector3 basePosition)
-    {
-        // Create a Fibonacci spiral approximation using golden ratio
-        float goldenRatio = 1.618f;
-        int pointCount = Random.Range(10, 16);
-        float scale = Random.Range(0.5f, 1.0f);
-        
-        for (int i = 0; i < pointCount; i++)
-        {
-            // Approximate Fibonacci spiral using golden ratio
-            float angle = i * goldenRatio * 0.5f;
-            float radius = Mathf.Pow(goldenRatio, i * 0.1f) * scale;
-            
-            // Convert polar to cartesian
-            float x = radius * Mathf.Cos(angle);
-            float y = radius * Mathf.Sin(angle);
-            
-            Vector3 pos = basePosition + Vector3.right * x + Vector3.up * y;
-            SpawnSingleAnchorAt(pos);
-        }
-    }
-    
-    void SpawnWavePatternAt(Vector3 basePosition)
-    {
-        // Create a complex wave pattern combining multiple sine waves
-        float amplitude1 = Random.Range(1.5f, 3f);
-        float frequency1 = Random.Range(0.3f, 0.8f);
-        float amplitude2 = Random.Range(0.5f, 1.5f);
-        float frequency2 = Random.Range(1.0f, 2.0f);
-        float spacing = Random.Range(0.6f, 1.0f);
-        int pointCount = Random.Range(10, 18);
-        
-        for (int i = 0; i < pointCount; i++)
-        {
-            float x = i * spacing;
-            // Combine two sine waves for a more complex pattern
-            float y = (Mathf.Sin(x * frequency1) * amplitude1) + (Mathf.Sin(x * frequency2) * amplitude2);
-            Vector3 pos = basePosition + Vector3.right * x + Vector3.up * y;
-            SpawnSingleAnchorAt(pos);
-        }
-    }
-}
-```
-
-Procedural generation using mathematical patterns - Fibonacci spirals with golden ratio and complex wave patterns combining multiple sine waves. Creates varied, but structured and interesting grapple point arrangements.
-
-### Ginger Shroom Journey - Arrow Shooting
-```csharp
-public class Arrow : MonoBehaviour
-{
-    public float speed = 10f;
-    public float lifetime = 3f;
-    private Rigidbody2D rb;
-    
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * speed;
-        Destroy(gameObject, lifetime);
-    }
-    
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
-        else if (other.CompareTag("Ground"))
-        {
-            Destroy(gameObject);
-        }
-    }
-}
-```
-
-Simple projectile system - arrows fly forward, destroy enemies on hit, disappear after hitting ground or timing out.
-
-### Ginger Shroom Journey - Coin Collection
-```csharp
-public class CoinScript : MonoBehaviour
-{
-    public int coinValue = 1;
-    private ScoreManager scoreManager;
-    private bool isCollected = false;
-    public AudioSource collectSound;
-    
-    void Start()
-    {
-        scoreManager = ScoreManager.Instance;
-        collectSound = GetComponent<AudioSource>();
-    }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (!isCollected && collision.gameObject.CompareTag("Player"))
-        {
-            CollectCoin();
-        }
-    }
-    
-    void CollectCoin()
-    {
-        isCollected = true;
-        
-        if (scoreManager != null)
-        {
-            scoreManager.AddScore(coinValue);
-        }
-        
-        if (collectSound != null)
-        {
-            collectSound.PlayOneShot(collectSound.clip);
-        }
-        
-        Destroy(gameObject, 0.25f);
-    }
-}
-```
-
-Collectible coins that add to score, play sound effects, and have a small delay before disappearing for visual feedback.
+- **[Documentation Overview](Docs/README.md)** – Index of all materials and code samples  
+- **[Quantum Tether](Docs/QuantumTether/)** – System design, source, and analysis  
+- **[Project Experiences](Docs/MC_ProjectExperiences.pdf)** – Tech stacks and production notes  
+- **[Ginger Shroom Journey – Code Analysis](Docs/GSJ_CSharp_Analysis.pdf)** – Architecture deep dive  
+- **[Development Videos](Docs/VideoLinks.pdf)** – Process demos  
+- **[Complete Source Code](Docs/GSJ_Scripts/)** – Full C# codebase  
 
 ---
 
-[<img width="2750" height="900" alt="revisedLogoForGitHubPages" src="https://github.com/user-attachments/assets/652c4d2a-2444-48e4-a495-ed87bf902805" />
-](https://goldleafinteractive.itch.io)
+## Featured Project
+
+### Quantum Tether — Unity 6 (TX Game Jam)
+A 2D grappling-based endless runner built around physics-driven movement, procedural anchor generation, and modular systems.
+
+**Key Systems**
+- Event-based architecture for decoupled gameplay systems  
+- Grappling mechanics using `DistanceJoint2D` and `LineRenderer`  
+- Procedural anchor patterns (Fibonacci, wave functions, parametric math)  
+- Upgrade and progression framework  
+- Object cleanup and memory-conscious spawning  
 
 ---
-  
+
+## Code Example — Grappling Physics (Unity / C#)
+
+```csharp
+void TryGrapple(Vector2 targetPos)
+{
+    Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
+    float distance = Vector2.Distance(transform.position, targetPos);
+
+    if (distance > maxRopeLength) return;
+
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, grappleLayer);
+    if (hit.collider != null)
+    {
+        CreateGrappleJoint(hit.point);
+    }
+}
+```
 ---
 
 ## About Me
