@@ -1,14 +1,14 @@
 # Marwan Charafeddine — Game Development Portfolio
 
-[![Unity](https://img.shields.io/badge/Engine-Unity-informational?logo=unity)](https://unity.com/)
 [![Unreal](https://img.shields.io/badge/Engine-Unreal-informational?logo=unreal-engine)](https://www.unrealengine.com/)
-[![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![Unity](https://img.shields.io/badge/Engine-Unity-informational?logo=unity)](https://unity.com/)
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
+[![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
-I’m a gameplay-focused developer working primarily with **Unreal Engine 5** and **Unity**, specializing in mechanics, systems design, and technical implementation.  
-After completing my studies at Texas A&M, I went back to school to pursue game development—bringing a structured, analytical mindset into learning programming and interactive systems.
+I’m a gameplay-focused developer working primarily with **Unreal Engine 5** and **Unity**, with an interest in mechanics, systems design, and technical implementation.  
+After completing my studies at Texas A&M, I returned to school to pursue game development—bringing a structured, analytical mindset into learning programming and interactive systems.
 
-This repository serves as my **technical portfolio**: design documentation, system breakdowns, and code samples that complement my main website.
+This repository serves as my **technical portfolio**: design documentation, system breakdowns, and code samples that complement my main website and playable projects.
 
 🌐 **Portfolio Website:** https://mcharafeddinedev.github.io
 
@@ -16,29 +16,29 @@ This repository serves as my **technical portfolio**: design documentation, syst
 
 ## Technical Skills
 
-**Languages**
+### Languages
 - C#, C++, Blueprint Visual Scripting  
 
-**Engines**
+### Engines
 - Unity, Unreal Engine 5  
 
-**Focus Areas**
+### Focus Areas
 - Gameplay programming & systems design  
 - Mechanics and state-driven architecture  
-- Prototyping and rapid iteration  
-- Procedural generation & physics-based systems  
+- Prototyping and iteration  
+- Procedural and physics-based systems  
 
-**Advanced Topics (In Progress)**
-- Object & memory management  
+### Topics I’m Actively Learning
+- Memory and object management  
 - Performance optimization  
-- AI logic & behavior trees  
+- AI logic and behavior trees  
 - Modular and engine-level architecture  
 
-**Tools**
+### Tools
 - Visual Studio, Git, Trello, Jira  
 - Unity 6, Unreal Engine 5, UE Blueprints Editor  
 
-**Platforms**
+### Platforms
 - Windows PC, Steam, Itch.io, Game Jams  
 
 ---
@@ -46,13 +46,16 @@ This repository serves as my **technical portfolio**: design documentation, syst
 ## Current Development Focus
 
 ### 🎮 Gameplay Prototyping
-I’m actively developing an **endless-runner style arcade game**, centered on responsive movement, scoring systems, and replayable game loops. This project is used to refine moment-to-moment feel, modular gameplay logic, and clean system design.
+I’m currently developing an **endless-runner style arcade game in Unreal Engine (C++)**, focused on responsive movement, scoring systems, and replayable game loops.  
+This project is where I spend most of my time refining moment-to-moment feel, structuring clean gameplay logic, and experimenting with state-driven mechanics.
 
-### ⚙️ Engine-Level Exploration (C++)
-Alongside engine-based work, I’ve been experimenting with a **custom 2D engine in C++**. While not yet production-ready, this project has deepened my understanding of rendering concepts, entity management, and low-level architecture. I plan to return to it in a more structured way as my C++ skills continue to grow.
+### ⚙️ Technical Curiosity & Learning Projects
+Alongside gameplay work, I occasionally explore lower-level or experimental projects—such as small engine experiments or editor automation tools. These are **not production projects**, but learning sandboxes that help me better understand how engines, tools, and pipelines work under the hood.
 
-### 🧩 Tooling, Automation & Modern Workflows
-I also explore **editor tooling and development automation**, including Python-based workflows for Unreal Engine editor tasks, data handling, and internal utilities. More broadly, I focus on integrating modern workflows and emerging technologies to improve iteration speed, clarity, and long-term maintainability.
+I don’t treat these as finished products; they exist to strengthen my fundamentals, improve how I think about systems, and inform my future gameplay work.
+
+### 🧩 Tooling & Workflow Exploration
+I also experiment with lightweight tooling and automation (including Python-based Unreal Editor scripts) to better understand development pipelines and improve iteration speed. These efforts are **purely exploratory**, but reflect my interest in how modern workflows and emerging tools can support creative development.
 
 ---
 
@@ -66,13 +69,15 @@ This repository functions as a technical archive alongside my website:
 - **[Ginger Shroom Journey – Code Analysis](Docs/GSJ_CSharp_Analysis.pdf)** – Architecture deep dive  
 - **[Development Videos](Docs/VideoLinks.pdf)** – Process demos  
 - **[Complete Source Code](Docs/GSJ_Scripts/)** – Full C# codebase  
+- **[Tooling & Automation Notes](Docs/Python/ToolingAndAutomation.md)** – Experimental editor scripting and workflow exploration
+- **[Custom 2D C++ Engine Project](Docs/EngineExperiments/README.md)** – Experimental game engine & editor debug tool
 
 ---
 
 ## Featured Project
 
 ### Quantum Tether — Unity 6 (TX Game Jam)
-A 2D grappling-based endless runner built around physics-driven movement, procedural anchor generation, and modular systems.
+A 2D grappling-based endless runner built around physics-driven movement, procedural anchor generation, and modular gameplay systems.
 
 **Key Systems**
 - Event-based architecture for decoupled gameplay systems  
@@ -100,7 +105,6 @@ void TryGrapple(Vector2 targetPos)
     }
 }
 ```
----
 
 ## About Me
 - B.S. in Veterinary Studies from Texas A&M University at College Station
