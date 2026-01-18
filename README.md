@@ -20,7 +20,7 @@ This repository serves as my **technical portfolio**: design documentation, syst
 - C#, C++, Blueprint Visual Scripting  
 
 ### Engines
-- Unity, Unreal Engine 5  
+- Unreal Engine 5, Unity
 
 ### Focus Areas
 - Gameplay programming & systems design  
@@ -107,7 +107,7 @@ void TryGrapple(Vector2 targetPos)
 ```
 
 ## About Me
-- B.S. in Veterinary Studies from Texas A&M University at College Station
+- B.S. in Veterinary Medicine from Texas A&M University at College Station
 - A.A.S. in Digital Gaming & Simulation for Programmers from Houston Community College
 - Currently working on gameplay programming and systems design
 
