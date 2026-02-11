@@ -1,6 +1,16 @@
-# StateRunner: Arcade (Updated Janurary 16, 2025)
+# StateRunner: Arcade — Prototype Documentation
 
-**Engine:** Unreal Engine 5.7+  
+> **This project has been completed and released as [OVERCLOCKED: Data Dash MAX](../OVERCLOCKED-DataDashMAX/).**
+> 
+> The documentation below represents the **original prototype design and planning phase** that guided development. The final released version implemented and expanded upon these systems, including the OVERCLOCK mechanic, 45+ obstacle patterns, a full theme system, and arcade cabinet deployment.
+> 
+> **See the released version:** [OVERCLOCKED: Data Dash MAX Documentation](../OVERCLOCKED-DataDashMAX/) | [Play on Itch.io](https://goldleafinteractive.itch.io/overclocked-ddm) | [Watch Trailer](https://www.youtube.com/watch?v=dI9Ctq9LkLs)
+
+---
+
+*Original Prototype Documentation (January 2025)*
+
+**Engine:** Unreal Engine 5.5  
 **Language:** C++ (with Blueprint integration)  
 **Platform:** Windows PC (Arcade Cabinet Target)
 

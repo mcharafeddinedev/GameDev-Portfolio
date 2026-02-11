@@ -1,8 +1,27 @@
 # Documentation
 
-This folder contains documentation and code samples from my game development projects, including my game jam winning project Quantum Tether and my published game Ginger Shroom Journey.
+This folder contains documentation and code samples from my game development projects, including my most recent release OVERCLOCKED: Data Dash MAX, my game jam winning project Quantum Tether, and my published game Ginger Shroom Journey.
 
 ## What's Here
+
+### OVERCLOCKED: Data Dash MAX (`OVERCLOCKED-DataDashMAX/`)
+My most technically polished project — a complete arcade endless runner built in **Unreal Engine 5 (C++)** and shipped to arcade cabinet hardware.
+
+**Links:** [Itch.io](https://goldleafinteractive.itch.io/overclocked-ddm) | [YouTube Trailer](https://www.youtube.com/watch?v=dI9Ctq9LkLs)
+
+- **`README.md`** - Project overview, features, and documentation index
+- **`SystemArchitecture.md`** - Component architecture, coordinate system, event-driven patterns
+- **`CodeSamples.md`** - Representative C++ implementations (lane switching, OVERCLOCK, themes, combos)
+- **`SystemsOverview.md`** - Detailed breakdown of all core gameplay systems
+
+**Technical Highlights:**
+- Component-based architecture with 7 core systems
+- 45+ hand-crafted obstacle patterns with procedural generation
+- Data-driven theme system (6 color schemes)
+- Local leaderboard with arcade-style initials entry
+- Stable 60fps on arcade cabinet hardware
+
+---
 
 ### Quantum Tether (`QuantumTether/`)
 My game jam project from TX Game Jam 2024 - an infinite 2D grappling hook game with physics and procedural generation.

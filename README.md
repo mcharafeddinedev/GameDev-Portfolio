@@ -5,54 +5,59 @@
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
-I’m a gameplay-focused developer working primarily with **Unreal Engine 5** and **Unity**, with an interest in mechanics, systems design, and technical implementation.  
+I'm a gameplay-focused developer working primarily with **Unreal Engine 5** and **Unity**, with an interest in mechanics, systems design, and technical implementation.  
 After completing my studies at Texas A&M, I returned to school to pursue game development—bringing a structured, analytical mindset into learning programming and interactive systems.
 
-This repository serves as my **technical portfolio**: design documentation, system breakdowns, and code samples that complement my main website and playable projects.
+---
 
-🌐 **Portfolio Website:** https://mcharafeddinedev.github.io
+> **📂 This repository is a technical supplement to my portfolio website.**  
+> It contains design documentation, system architecture breakdowns, and code samples for my projects.  
+> For screenshots, gameplay videos, playable builds, and a complete project overview, visit my main site:
+>
+> 🌐 **[mcharafeddinedev.github.io](https://mcharafeddinedev.github.io)**
+
+---
 
 ---
 
 ## Technical Skills
 
 ### Languages
-- C#, C++, Blueprint Visual Scripting  
+- **C++**, C#, Blueprint Visual Scripting  
 
 ### Engines
 - Unreal Engine 5, Unity
 
 ### Focus Areas
 - Gameplay programming & systems design  
-- Mechanics and state-driven architecture  
-- Prototyping and iteration  
-- Procedural and physics-based systems  
+- Component-based and state-driven architecture  
+- Procedural generation and data-driven systems  
+- Prototyping & Iteration
 
-### Topics I’m Actively Learning
+### Topics I'm Actively Learning
 - Memory and object management  
 - Performance optimization  
 - AI logic and behavior trees  
 - Modular and engine-level architecture  
 
 ### Tools
-- Visual Studio, Git, Trello, Jira  
+- Visual Studio, Rider, Git, Trello, Jira  
 - Unity 6, Unreal Engine 5, UE Blueprints Editor  
 
 ### Platforms
-- Windows PC, Steam, Itch.io, Game Jams  
+- Windows PC, Steam, Itch.io, Arcade Cabinet Hardware, Game Jams  
 
 ---
 
 ## Current Development Focus
 
-### 🎮 Gameplay Prototyping
-I’m currently developing an **endless-runner style arcade game in Unreal Engine (C++)**, focused on responsive movement, scoring systems, and replayable game loops.  
-This project is where I spend most of my time refining moment-to-moment feel, structuring clean gameplay logic, and experimenting with state-driven mechanics.
+### 🎮 Recent Release: OVERCLOCKED: Data Dash MAX
+I recently shipped **[OVERCLOCKED: Data Dash MAX](https://goldleafinteractive.itch.io/overclocked-ddm)** — a complete arcade endless runner built in **Unreal Engine 5 (C++)**. This is my most technically polished project to date: component-based architecture, 45+ hand-crafted obstacle patterns with procedural generation, and deployed to arcade cabinet hardware at stable 60fps.
 
 ### ⚙️ Technical Curiosity & Learning Projects
-Alongside gameplay work, I occasionally explore lower-level or experimental projects—such as small engine experiments or editor automation tools. These are **not production projects**, but learning sandboxes that help me better understand how engines, tools, and pipelines work under the hood.
+Alongside gameplay work, I occasionally explore lower-level or experimental projects—such as small engine experiments or editor automation tools. These are often **not production projects**, though they can turn into them sometimes, but rather they are learning sandboxes that help me better understand how engines, tools, and pipelines work under the hood.
 
-I don’t treat these as finished products; they exist to strengthen my fundamentals, improve how I think about systems, and inform my future gameplay work.
+I don't treat these as finished products; they exist to strengthen my fundamentals, improve how I think about systems, and inform my future gameplay work.
 
 ### 🧩 Tooling & Workflow Exploration
 I also experiment with lightweight tooling and automation (including Python-based Unreal Editor scripts) to better understand development pipelines and improve iteration speed. These efforts are **purely exploratory**, but reflect my interest in how modern workflows and emerging tools can support creative development.
@@ -64,6 +69,7 @@ I also experiment with lightweight tooling and automation (including Python-base
 This repository functions as a technical archive alongside my website:
 
 - **[Documentation Overview](Docs/README.md)** – Index of all materials and code samples  
+- **[OVERCLOCKED: Data Dash MAX](Docs/OVERCLOCKED-DataDashMAX/)** – System design and C++ code samples  
 - **[Quantum Tether](Docs/QuantumTether/)** – System design, source, and analysis  
 - **[Project Experiences](Docs/MC_ProjectExperiences.pdf)** – Tech stacks and production notes  
 - **[Ginger Shroom Journey – Code Analysis](Docs/GSJ_CSharp_Analysis.pdf)** – Architecture deep dive  
@@ -74,7 +80,23 @@ This repository functions as a technical archive alongside my website:
 
 ---
 
-## Featured Project
+## Featured Projects
+
+### OVERCLOCKED: Data Dash MAX — Unreal Engine 5 (C++)
+A high-speed arcade endless runner where you play as an electric impulse racing through neon-lit circuitry. Built with a component-based C++ architecture and shipped to arcade cabinet hardware.
+
+**Links:** [Itch.io](https://goldleafinteractive.itch.io/overclocked-ddm) | [YouTube Trailer](https://www.youtube.com/watch?v=dI9Ctq9LkLs) | [Documentation](Docs/OVERCLOCKED-DataDashMAX/)
+
+**Technical Highlights**
+- **UE5 C++ with Blueprint wrappers** — Clean C++ core systems exposed to Blueprints for rapid iteration  
+- **Component-based architecture** — WorldScrollComponent, ObstacleSpawnerComponent, PickupSpawnerComponent, ScoreSystemComponent, OverclockSystemComponent, ThemeSubsystem  
+- **45+ hand-crafted obstacle patterns** — Combined with procedural generation and fairness validation  
+- **Data-driven subsystems** — 6 color themes, combo scoring, local leaderboard with initials entry, persistent settings  
+- **Full keyboard/gamepad-navigable UI** — Zone-based menu navigation, music player system  
+- **Risk/reward OVERCLOCK system** — Hold to activate speed boost with score multipliers, meter drain mechanics  
+- **Shipped to arcade cabinet hardware** — Stable 60fps on target hardware  
+
+---
 
 ### Quantum Tether — Unity 6 (TX Game Jam)
 A 2D grappling-based endless runner built around physics-driven movement, procedural anchor generation, and modular gameplay systems.
@@ -88,21 +110,38 @@ A 2D grappling-based endless runner built around physics-driven movement, proced
 
 ---
 
-## Code Example — Grappling Physics (Unity / C#)
+## Code Example — OVERCLOCK System (Unreal / C++)
 
-```csharp
-void TryGrapple(Vector2 targetPos)
+```cpp
+void UOverclockSystemComponent::ActivateOverclock()
 {
-    Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
-    float distance = Vector2.Distance(transform.position, targetPos);
+    if (bIsOverclockActive) return;
+    
+    bIsOverclockActive = true;
 
-    if (distance > maxRopeLength) return;
-
-    RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, grappleLayer);
-    if (hit.collider != null)
+    // Apply speed multiplier to world scroll
+    if (WorldScrollComponent)
     {
-        CreateGrappleJoint(hit.point);
+        WorldScrollComponent->SetOverclockMultiplier(SpeedMultiplier, true);
     }
+
+    // Activate bonus scoring
+    if (ScoreSystemComponent)
+    {
+        ScoreSystemComponent->SetOverclockActive(true);
+    }
+
+    // Trigger camera zoom for intensity
+    if (AStateRunner_ArcadeCharacter* Character = GetPlayerCharacter())
+    {
+        Character->SetOverclockZoom(true);
+    }
+
+    // Audio feedback
+    PlayOverclockSound(OverclockActivateSound);
+    StartOverclockLoop();
+
+    OnOverclockStateChanged.Broadcast(true);
 }
 ```
 
@@ -120,5 +159,3 @@ void TryGrapple(Vector2 targetPos)
 [![Itch.io](https://img.shields.io/badge/Itch.io-Portfolio-critical?logo=itch.io)](https://goldleafinteractive.itch.io/) 
 [![Steam](https://img.shields.io/badge/Steam-Projects-lightgrey?logo=steam)](https://store.steampowered.com/app/3023100/Ginger_Shroom_Journey/) 
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)](https://github.com/mcharafeddinedev)
-
-
