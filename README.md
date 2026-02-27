@@ -62,6 +62,9 @@ I don't treat these as finished products; they exist to strengthen my fundamenta
 ### 🧩 Tooling & Workflow Exploration
 I also experiment with lightweight tooling and automation (including Python-based Unreal Editor scripts) to better understand development pipelines and improve iteration speed. These efforts are **purely exploratory**, but reflect my interest in how modern workflows and emerging tools can support creative development.
 
+### 🌬️ Breathe — Breath-Controlled Prototype (Unity)
+I'm building a **breath-controlled sailboat race** in Unity: breath is the only input, driven by custom analog hardware (plus microphone fallback and simulated input for development). The design is no-fail—every session ends positively—with a source-agnostic breath pipeline and potential for healthcare-adjacent applications.
+
 ---
 
 ## Documentation
@@ -71,6 +74,7 @@ This repository functions as a technical archive alongside my website:
 - **[Documentation Overview](Docs/README.md)** – Index of all materials and code samples  
 - **[OVERCLOCKED: Data Dash MAX](Docs/OVERCLOCKED-DataDashMAX/)** – System design and C++ code samples  
 - **[Quantum Tether](Docs/QuantumTether/)** – System design, source, and analysis  
+- **[Breathe](Docs/Breathe/)** – Breath-controlled sailboat race (Unity, alternative control, custom hardware, prototype)  
 - **[Project Experiences](Docs/MC_ProjectExperiences.pdf)** – Tech stacks and production notes  
 - **[Ginger Shroom Journey – Code Analysis](Docs/GSJ_CSharp_Analysis.pdf)** – Architecture deep dive  
 - **[Development Videos](Docs/VideoLinks.pdf)** – Process demos  
@@ -107,6 +111,23 @@ A 2D grappling-based endless runner built around physics-driven movement, proced
 - Procedural anchor patterns (Fibonacci, wave functions, parametric math)  
 - Upgrade and progression framework  
 - Object cleanup and memory-conscious spawning  
+
+---
+
+### Breathe — Breath-Controlled Sailboat Race (Unity)
+Breath is the only input: a custom breath-sensing device drives the wind that powers a sailboat racing alongside AI companions. No buttons, no sticks—no one ever loses.
+
+**Links:** [Documentation](Docs/Breathe/) | [Project repository](https://github.com/mcharafeddinedev/Breathe-Game)
+
+**Technical Highlights**
+- **Breath-only input** — Single input channel keeps focus on breathing and yields clean breath-effort data; playable by anyone who can blow
+- **No-fail design** — Every session ends with celebration of personal progress; no "Game Over" or loss states; games adapt to the player's ability
+- **Source-agnostic breath pipeline** — Signal capture → normalization → stability → gameplay; one interface regardless of hardware, microphone, or simulated source
+- **Custom hardware integration** — Developer-built breath-reactive device (fan + microcontroller) with USB serial telemetry; microphone fallback and simulated input for development
+- **Healthcare-adjacent potential** — Breath-only design captures intensity, duration, and patterns for potential engagement and monitoring use in clinical or pediatric settings
+- **Expandable scope** — Core sailboat race designed to extend into a collection of breath-only minigames sharing the same input system and no-fail philosophy
+
+**Tech:** Unity (C#), 2D URP, Windows PC. Input abstraction allows swapping custom device / microphone fallback / simulated input without changing gameplay code.
 
 ---
 

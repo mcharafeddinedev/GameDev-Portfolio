@@ -1,6 +1,6 @@
 # Documentation
 
-This folder contains documentation and code samples from my game development projects, including my most recent release OVERCLOCKED: Data Dash MAX, my game jam winning project Quantum Tether, and my published game Ginger Shroom Journey.
+This folder contains documentation and code samples from my game development projects, including my most recent release OVERCLOCKED: Data Dash MAX, my game jam project Quantum Tether, and my in-development breath-control project Breathe, and my published game Ginger Shroom Journey.
 
 ## What's Here
 
@@ -31,6 +31,18 @@ My game jam project from TX Game Jam 2024 - an infinite 2D grappling hook game w
 - **`Quantum_Thread_Post_Mortem.md`** - Development insights and what I learned
 - **`README_System_Architecture.md`** - How all systems work together
 - **`Scripts/`** - Source code organized by system (7,600+ lines)
+
+---
+
+### Breathe (`Breathe/`)
+Breath-controlled sailboat race — Unity (C#), 2D URP. Breath is the only input; custom hardware, microphone fallback, and simulated input feed a single abstraction layer. No-fail design; prototype in progress.
+
+- **`README.md`** - Portfolio summary: pitch, why breath-only, tech stack, status, link to project repo
+- **`ARCHITECTURE_OVERVIEW.md`** - Breath pipeline layers, input abstraction, no-fail rationale (one-page)
+
+**Project repo:** [Breathe-Game](https://github.com/mcharafeddinedev/Breathe-Game)
+
+---
 
 ### Project Documentation
 - **`MC_ProjectExperiences.pdf`** - Notes on the tech stack and tools I've used across different projects
