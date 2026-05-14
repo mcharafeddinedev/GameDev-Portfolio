@@ -1,6 +1,10 @@
 # Documentation
 
-This folder contains documentation and code samples from my game development projects, including my most recent release OVERCLOCKED: Data Dash MAX, my game jam project Quantum Tether, and my in-development breath-control project Breathe, and my published game Ginger Shroom Journey.
+This folder contains documentation and code samples from my game development projects. It includes system architecture breakdowns, technical overviews, and code samples showcasing my approach to gameplay programming and systems design.
+
+**Featured Projects:** OVERCLOCKED: Data Dash MAX, ACCESS GRANTED, Dread & Breakfast, Trenchglow, BREATHE Arcade, Quantum Tether, Ginger Shroom Journey
+
+---
 
 ## What's Here
 
@@ -23,24 +27,99 @@ My most technically polished project — a complete arcade endless runner built 
 
 ---
 
-### Quantum Tether (`QuantumTether/`)
-My game jam project from TX Game Jam 2024 - an infinite 2D grappling hook game with physics and procedural generation.
+### ACCESS GRANTED (`AccessGranted/`)
+*Hackers* (1995)-inspired challenging breakout-like with a typing twist — Unity 6 (C#), 2D physics. Dual-mode gameplay switches between paddle reflexes and typing precision.
 
-- **`README.md`** - Project overview and documentation guide
-- **`Project_Analysis_and_Architecture.md`** - System architecture analysis
-- **`Quantum_Thread_Post_Mortem.md`** - Development insights and what I learned
-- **`README_System_Architecture.md`** - How all systems work together
-- **`Scripts/`** - Source code organized by system (7,600+ lines)
+**Links:** [Play in Browser](https://goldleafinteractive.itch.io/access-granted)
+
+- **`README.md`** — Project overview, concept, and architecture diagram
+- **`TechnicalOverview.md`** — Detailed component breakdown, block types, typing subsystem, WebGL considerations
+
+**Technical Highlights:**
+- Dual-mode gameplay (paddle ↔ typing)
+- Modular block types with HP tiers (Standard, Heavy, Command, Explosive, Indestructible)
+- World-space typing prompts with slow-mo and overlap prevention
+- Rule-of-three failure system (separate ball-miss and typing-fail counters)
+- WebGL-first with auto-pause on tab blur
 
 ---
 
-### Breathe (`Breathe/`)
-Breath-controlled sailboat race — Unity (C#), 2D URP. Breath is the only input; custom hardware, microphone fallback, and simulated input feed a single abstraction layer. No-fail design; prototype in progress.
+### Dread & Breakfast (`DreadAndBreakfast/`)
+Top-down haunting strategy roguelike — Unity 6 (C#), 2D orthographic. You are the ghost; scare house guests, make them flee before dawn. Built for Mini Jam 208: Inverted.
 
-- **`README.md`** - Portfolio summary: pitch, why breath-only, tech stack, status, link to project repo
-- **`ARCHITECTURE_OVERVIEW.md`** - Breath pipeline layers, input abstraction, no-fail rationale (one-page)
+**Links:** [Play in Browser](https://goldleafinteractive.itch.io/dread-and-breakfast)
 
-**Project repo:** [Breathe-Game](https://github.com/mcharafeddinedev/Breathe-Game)
+- **`README.md`** — Project overview, game loops, content roster
+- **`TechnicalOverview.md`** — Data-driven architecture, scare categories, ability system, visitor AI
+
+**Technical Highlights:**
+- Data-driven content (ScriptableObjects for props, visitors, abilities, archetypes)
+- Five scare categories with visitor-specific fear profiles
+- 17 haunts + 3 ultimates with eight-slot ability action bar
+- Procedural house generation (grid templates + room assignment rules)
+- Roguelike meta-progression with Fright Points
+
+---
+
+### Trenchglow (`Trenchglow/`)
+Deep-sea sonar adventure — Unity (C#), 2D URP. Navigate dark abyssal trenches; sonar pulses reveal the world momentarily. Built for Mini Jam 209: Deep.
+
+**Links:** [Play in Browser](https://goldleafinteractive.itch.io/trenchglow)
+
+- **`README.md`** — Project overview, controls, puzzle systems, level architecture
+- **`TechnicalOverview.md`** — Sonar reveal system, player controller, state machine, scene architecture
+
+**Technical Highlights:**
+- Dual tilemap visibility system (resolved vs scan silhouette)
+- Shader-driven sonar with timed expand/hold/contract
+- Stamina-gated swimming with boost mechanics
+- Puzzle infrastructure (PressurePoints, TrenchChunks, Doors, StateChannels)
+- App state machine with clean scene flow
+
+---
+
+### Quantum Tether (`QuantumTether/`)
+Endless roguelike grappling sidescroller — Unity (C#). Swing on stars and asteroids with physics-driven movement and procedural generation. Built for Texas Game Jam 2025.
+
+**Links:** [Itch.io](https://goldleafinteractive.itch.io/quantum-tether)
+
+- **`README.md`** — Project overview and documentation guide
+- **`Project_Analysis_and_Architecture.md`** — System architecture analysis
+- **`Quantum_Thread_Post_Mortem.md`** — Development insights and what I learned
+- **`README_System_Architecture.md`** — How all systems work together
+- **`Scripts/`** — Source code organized by system (7,600+ lines)
+
+**Technical Highlights:**
+- Grapple feel tuned for arcade swing (damping, rope length, dash assists)
+- Procedural level generation with hand-authored pattern pieces
+- Difficulty tiers with weighted selection as run speeds up
+- 10+ upgrades affecting movement and interaction
+- Event-based architecture for decoupled systems
+
+---
+
+### BREATHE Arcade (`Breathe/`)
+Breath-controlled minigame collection — Unity 6 (C#), 2D URP. Five minigames where breath is the only input; custom hardware (fan sensor with Arduino), microphone fallback, and keyboard simulation. No-fail design ensures every session ends positively.
+
+**Links:** [Play in Browser](https://goldleafinteractive.itch.io/breathe-arcade) | **Project repo:** [Breathe-Game](https://github.com/mcharafeddinedev/Breathe-Game)
+
+- **`README.md`** — Portfolio summary: pitch, minigame list, tech stack, hardware overview
+- **`ARCHITECTURE_OVERVIEW.md`** — Breath pipeline layers, input abstraction, no-fail rationale
+
+**Minigames:**
+- **Sailboat** — Fill sails with steady breath to race AI companions
+- **Balloon** — Controlled exhales inflate balloons faster
+- **Bubbles** — Chain bubbles with consistent breath stream
+- **Stargaze** — Push clouds to reveal constellations
+- **Skydive** — Guide parachuting skydiver with jetpack thrusters
+
+**Technical Highlights:**
+- IMinigame interface for shared lifecycle, analytics, and result display
+- Source-agnostic breath pipeline (hardware / mic / simulated)
+- Custom hardware integration (DC motor voltage → Arduino → USB serial → Unity)
+- Spin-down compensation for fan coast detection
+- Procedural generation (scenes are minimal; everything generated at runtime)
+- Breath analytics with personal bests per minigame
 
 ---
 
