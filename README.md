@@ -6,13 +6,13 @@
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
 I'm a gameplay systems engineer and technical designer working primarily with **Unreal Engine 5** and **Unity**, with an interest in mechanics, systems design, and technical implementation.  
-After completing my studies at Texas A&M, I completed an **A.A.S. in Digital Gaming & Simulation (Programmers)** at Houston Community College—bringing a structured, analytical mindset into game development and interactive systems.
+After completing my Bachelor's at Texas A&M, I also got an **A.A.S. in Digital Gaming & Simulation (Programmers)** degree at Houston Community College—I bring a structured, scientific & analytical mindset into game development and interactive systems.
 
 ---
 
 > **📂 This repository is a technical supplement to my portfolio website.**  
 > It contains design documentation, system architecture breakdowns, and code samples for my projects.  
-> For screenshots, gameplay videos, playable builds, and a complete project overview, visit my main site:
+> For screenshots, gameplay videos, playable builds, and a complete project overview, visit my main website:
 >
 > 🌐 **[mcharafeddinedev.github.io](https://mcharafeddinedev.github.io)**
 
@@ -45,8 +45,8 @@ After completing my studies at Texas A&M, I completed an **A.A.S. in Digital Gam
 - Visual Studio, Rider, Git, Trello, Jira  
 - Unity 6, Unreal Engine 5, UE Blueprints Editor  
 
-### Platforms
-- Windows PC, Steam, Itch.io, Arcade Cabinet Hardware, Game Jams  
+### Platforms 
+- Windows PC, Steam, Itch.io (WebGL), Arcade Cabinet Hardware, Game Jams  
 
 ---
 
