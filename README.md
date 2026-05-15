@@ -5,8 +5,11 @@
 [![C%2B%2B](https://img.shields.io/badge/Language-C%2B%2B-informational?logo=c%2B%2B)](https://isocpp.org/)
 [![C%23](https://img.shields.io/badge/Language-C%23-informational?logo=c-sharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
-I'm a gameplay systems engineer and technical designer working primarily with **Unreal Engine 5** and **Unity**, with an interest in mechanics, systems design, and technical implementation.  
-After completing my Bachelor's at Texas A&M, I also got an **A.A.S. in Digital Gaming & Simulation (Programmers)** degree at Houston Community College—I bring a structured, scientific & analytical mindset into game development and interactive systems.
+I’m a gameplay systems engineer and technical designer focused on building responsive, player-driven systems in Unreal Engine 5 and Unity. My work centers on gameplay mechanics, systems design, technical implementation, and rapid prototyping, with an emphasis on creating systems that feel intuitive, scalable, and satisfying to interact with.
+
+I originally earned my Bachelor’s degree from Texas A&M University, and have also recently earned an Associate of Applied Science degree, in Digital Gaming & Simulation (Programmers). I bring a structured, analytical mindset to game development, combining technical problem-solving with a strong understanding of gameplay feel, balance, and player experience shaped by more than 25 years of hands-on experience across multiple eras of games and platforms.
+
+This repository serves as a centralized technical portfolio containing projects, prototypes, development documentation, experiments, and gameplay systems work.
 
 ---
 
@@ -23,7 +26,7 @@ After completing my Bachelor's at Texas A&M, I also got an **A.A.S. in Digital G
 ## Technical Skills
 
 ### Languages
-- **C++**, C#, Blueprint Visual Scripting  
+- **C++**, **C#**, Blueprint Visual Scripting  
 
 ### Engines
 - Unreal Engine 5, Unity
@@ -34,7 +37,7 @@ After completing my Bachelor's at Texas A&M, I also got an **A.A.S. in Digital G
 - Procedural generation and data-driven systems  
 - Prototyping & Iteration
 
-### Topics I'm Actively Learning
+### Other Topics I'm Working On Improving In
 - Memory and object management  
 - Performance optimization  
 - AI logic and behavior trees  
@@ -56,8 +59,8 @@ After completing my Bachelor's at Texas A&M, I also got an **A.A.S. in Digital G
 I've been actively participating in game jams, shipping multiple complete prototypes:
 
 - **[ACCESS GRANTED](https://goldleafinteractive.itch.io/access-granted)** — *Hackers*-inspired brick breaker with typing challenges. Built in Unity 6 for The Movie The Game The Jam 2026.
-- **[I AM INEVITABLE](https://goldleafinteractive.itch.io/)** — Defeats raise stats; platformer with wall interplay + dashing. Built in UE5 for Chillenium 2026.
-- **[Dread & Breakfast](https://goldleafinteractive.itch.io/dread-and-breakfast)** — Top-down haunting strategy roguelike where you play as the ghost. Built in Unity 6 for Mini Jam 208: Inverted.
+- **[I AM INEVITABLE](https://goldleafinteractive.itch.io/)** — Failing increases your power; platformer with wall bouncing + dashing. Built in UE5 for Chillenium 2026.
+- **[Dread & Breakfast](https://goldleafinteractive.itch.io/dread-and-breakfast)** — Top-down clicker strategy roguelike, where you play as the ghost in a haunted house. Built in Unity 6 for Mini Jam 208: Inverted.
 - **[Trenchglow](https://goldleafinteractive.itch.io/trenchglow)** — 2D deep-sea adventure with sonar-based exploration and puzzle mechanics. Built in Unity for Mini Jam 209: Deep.
 
 ### 🕹️ OVERCLOCKED: Data Dash MAX
